@@ -1,0 +1,37 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "action_after_build", "action_after_build.vcxproj", "{EA391A16-067E-5896-257F-B7122F156188}"
+	ProjectSection(ProjectDependencies) = postProject
+		{862E1E8D-791C-EBE0-B228-CD35EDAE4E5F} = {862E1E8D-791C-EBE0-B228-CD35EDAE4E5F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libusb", "libusb.vcxproj", "{346082A4-80FA-7773-89BE-EA2D8D845EB1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "usb_bindings", "usb_bindings.vcxproj", "{862E1E8D-791C-EBE0-B228-CD35EDAE4E5F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{346082A4-80FA-7773-89BE-EA2D8D845EB1} = {346082A4-80FA-7773-89BE-EA2D8D845EB1}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{346082A4-80FA-7773-89BE-EA2D8D845EB1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{346082A4-80FA-7773-89BE-EA2D8D845EB1}.Debug|Win32.Build.0 = Debug|Win32
+		{346082A4-80FA-7773-89BE-EA2D8D845EB1}.Release|Win32.ActiveCfg = Release|Win32
+		{346082A4-80FA-7773-89BE-EA2D8D845EB1}.Release|Win32.Build.0 = Release|Win32
+		{862E1E8D-791C-EBE0-B228-CD35EDAE4E5F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{862E1E8D-791C-EBE0-B228-CD35EDAE4E5F}.Debug|Win32.Build.0 = Debug|Win32
+		{862E1E8D-791C-EBE0-B228-CD35EDAE4E5F}.Release|Win32.ActiveCfg = Release|Win32
+		{862E1E8D-791C-EBE0-B228-CD35EDAE4E5F}.Release|Win32.Build.0 = Release|Win32
+		{EA391A16-067E-5896-257F-B7122F156188}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EA391A16-067E-5896-257F-B7122F156188}.Debug|Win32.Build.0 = Debug|Win32
+		{EA391A16-067E-5896-257F-B7122F156188}.Release|Win32.ActiveCfg = Release|Win32
+		{EA391A16-067E-5896-257F-B7122F156188}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

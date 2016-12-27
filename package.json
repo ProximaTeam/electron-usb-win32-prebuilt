@@ -1,0 +1,120 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "electron-usb@git+https://github.com/mrVers/electron-usb.git",
+        "scope": null,
+        "escapedName": "electron-usb",
+        "name": "electron-usb",
+        "rawSpec": "git+https://github.com/mrVers/electron-usb.git",
+        "spec": "git+https://github.com/mrVers/electron-usb.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:mrVers/electron-usb.git",
+          "sshUrl": "git+ssh://git@github.com/mrVers/electron-usb.git",
+          "httpsUrl": "git+https://github.com/mrVers/electron-usb.git",
+          "gitUrl": "git://github.com/mrVers/electron-usb.git",
+          "shortcut": "github:mrVers/electron-usb",
+          "directUrl": "https://raw.githubusercontent.com/mrVers/electron-usb/master/package.json"
+        }
+      },
+      "C:\\Users\\John\\armbeep\\armbeep-desktop"
+    ]
+  ],
+  "_from": "git+https://github.com/mrVers/electron-usb.git",
+  "_id": "electron-usb@0.0.13",
+  "_inCache": true,
+  "_location": "/electron-usb",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "electron-usb@git+https://github.com/mrVers/electron-usb.git",
+    "scope": null,
+    "escapedName": "electron-usb",
+    "name": "electron-usb",
+    "rawSpec": "git+https://github.com/mrVers/electron-usb.git",
+    "spec": "git+https://github.com/mrVers/electron-usb.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:mrVers/electron-usb.git",
+      "sshUrl": "git+ssh://git@github.com/mrVers/electron-usb.git",
+      "httpsUrl": "git+https://github.com/mrVers/electron-usb.git",
+      "gitUrl": "git://github.com/mrVers/electron-usb.git",
+      "shortcut": "github:mrVers/electron-usb",
+      "directUrl": "https://raw.githubusercontent.com/mrVers/electron-usb/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/mrVers/electron-usb.git#a5fe506d5f68f606788b97c995220f429ab32194",
+  "_shasum": "5d8eb6621f860d7384f1cf2bf15f227c93f9fcd2",
+  "_shrinkwrap": null,
+  "_spec": "electron-usb@git+https://github.com/mrVers/electron-usb.git",
+  "_where": "C:\\Users\\John\\armbeep\\armbeep-desktop",
+  "author": {
+    "name": "Marco Piraccini",
+    "url": "https://github.com/marcopiraccini"
+  },
+  "binary": {
+    "module_name": "usb_bindings",
+    "module_path": "./build/{configuration}/electron-v1.4.10-{platform}-{arch}/",
+    "package_name": "electron-v1.4.10-{platform}-{arch}.tar.gz",
+    "host": "https://github.com/mrVers/electron-usb/releases/download/0.0.13"
+  },
+  "bugs": {
+    "url": "https://github.com/marcopiraccini/electron-usb/issues"
+  },
+  "bundleDependencies": [
+    "node-pre-gyp"
+  ],
+  "contributors": [
+    {
+      "name": "Marco Piraccini",
+      "email": "marco.piraccini@gmail.com",
+      "url": "https://github.com/marcopiraccini"
+    }
+  ],
+  "dependencies": {
+    "nan": "^2.1.0",
+    "node-pre-gyp": "^0.6.13"
+  },
+  "description": "Library to access USB devices",
+  "devDependencies": {
+    "coffee-script": "~1.6.2",
+    "mocha": "~1.8.2"
+  },
+  "engines": {
+    "electron": ">=1.4.10"
+  },
+  "gitHead": "a5fe506d5f68f606788b97c995220f429ab32194",
+  "homepage": "https://github.com/marcopiraccini/electron-usb#readme",
+  "keywords": [
+    "usb",
+    "hardware"
+  ],
+  "license": "MIT",
+  "main": "./usb",
+  "name": "electron-usb",
+  "optionalDependencies": {},
+  "readme": "# electron-usb\r\nnode-usb fork to be used with electron. It's a fork from node-usb which binary are released on github.\r\nIt's a temporary solution until binary package will be available for node 5.1.x and\r\nwindows / linux platforms on node-usb. Pleas refer to https://github.com/nonolith/node-usb on\r\nhow to use these APIs.\r\n\r\n# Prerequisite\r\nInstall the node version used by electron (currently is 5.1.1 for electron 0.36.7).\r\nA github valid `NODE_PRE_GYP_GITHUB_TOKEN` to be set as env variable.\r\n\r\n# Release & Build\r\nRemember to change the binary host with the correct version (see https://github.com/bchr02/node-pre-gyp-github).\r\nAfter the release, build the binaries for each OS.\r\n\r\n# Linux build\r\nOn Ubuntu 15.10, install:\r\n```\r\nsudo apt-get install libudev-dev libusb-1.0-0-dev g++-multilib libudev-dev:i386\r\n```\r\nAnd then run `npm run release-linux` (x64) or `npm run release-linux-ia32` (ia32) to publish\r\nthe binary build\r\n\r\n# Windows build\r\nUse a  Windows 7 on x64. Install Visual Studio (2013 is OK on Windows 7) and Python 2.7.x\r\nAlways specify the VisualStudio version using `--msvs_version=xxxx`, foor instance\r\n`npm i --msvs_version=2013`\r\n\r\nRelease using  `npm run release-win --msvs_version=2013` (x64) or `npm run release-win-ia32 --msvs_version=2013` (ia32)\r\n\r\n# OSx build\r\nAfter `npm i`, just use `npm run release-darwin`\r\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/marcopiraccini/electron-usb.git"
+  },
+  "scripts": {
+    "full-test": "mocha --compilers coffee:coffee-script",
+    "install": "node-pre-gyp install --fallback-to-build",
+    "release": "node-pre-gyp rebuild --runtime=electron --target=1.4.10 --dist-url=https://atom.io/download/atom-shell && node-pre-gyp package --runtime=electron --target=1.4.10",
+    "release-darwin": "HOME=~/.electron-gyp node-pre-gyp rebuild --target_platform=darwin --runtime=electron --target=1.4.10 --arch=x64 --dist-url=https://atom.io/download/atom-shell && node-pre-gyp package --target_platform=darwin --runtime=electron --target=1.4.10",
+    "release-linux": "node-pre-gyp rebuild --target_arch=x64 --runtime=electron --target=1.4.10 --target_platform=linux --dist-url=https://atom.io/download/atom-shell && node-pre-gyp package --target_arch=x64 --target_platform=linux --runtime=electron --target=1.4.10",
+    "release-linux-ia32": "node-pre-gyp rebuild --target_arch=ia32 --target_platform=linux --runtime=electron --target=1.4.10 --dist-url=https://atom.io/download/atom-shell && node-pre-gyp --target_arch=ia32 --target_platform=linux --runtime=electron --target=1.4.10 package",
+    "release-win": "node-pre-gyp rebuild --target_arch=x64 --target_platform=win32 --runtime=electron --target=1.4.10 --dist-url=https://atom.io/download/atom-shell && node-pre-gyp package --target_arch=x64 --target_platform=win32 --runtime=electron --target=1.4.10",
+    "release-win-ia32": "node-pre-gyp rebuild --target_arch=ia32 --target_platform=win32 --runtime=electron --target=1.4.10 --dist-url=https://atom.io/download/atom-shell && node-pre-gyp package --target_arch=ia32 --target_platform=win32 --runtime=electron --target=1.4.10",
+    "test": "mocha --compilers coffee:coffee-script --grep Module",
+    "valgrind": "coffee -c test/usb.coffee; valgrind --leak-check=full --show-possibly-lost=no node --expose-gc --trace-gc node_modules/mocha/bin/_mocha -R spec"
+  },
+  "version": "0.0.13"
+}
